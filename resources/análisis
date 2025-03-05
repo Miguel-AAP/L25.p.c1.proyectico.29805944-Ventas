@@ -1,0 +1,17 @@
+clase tienda
+atributo monto caja
+atributo porciento incremento
+atributo mayorPago
+atributo nombreMayorPago
+atributo cantidadVentaUnica
+método procesar venta
+    acumular monto caja
+    comparar mayorPago
+        asignar nombreMayorPago
+    comparar venta cantidad
+        acumular cantidadVentaUnica 
+clase venta
+atributo nombre cliente
+atributo numero factura
+atributo costo
+atributo cantidad

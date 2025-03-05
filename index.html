@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <section id="mainForm">
+        <table id="mainForm_tabla">
+            <tr>
+                <th>cliente</th>
+                <th>código</th>
+                <th>costo</th>
+                <th>cantidad</th>
+            </tr>
+        </table>
+        <button id="mainForm_btAgregar"> Añadir nueva venta</button>
+    </section>
+    <section id="articuloForm">
+        <h3> Datos de venta</h3>
+        <input type="text" id="articuloForm_inCliente" placeholder="Cliente"></input>
+        <input type="text" id="articuloForm_inFactura" placeholder="Factura"></input>
+        <input type="text" id="articuloForm_inCosto" placeholder="Costo"></input>
+        <input type="text" id="articuloForm_inCantidad" placeholder="Cantidad"></input>
+        <button id="articuloForm_btProcesar"> Procesar venta</button>
+    </section>
+    <section id="salida">
+    </section>
+    <script type="module">
+        import Cl_principal from "./js/Cl_principal.js"
+        new Cl_principal() 
+    </script>
+</body>
+</html>
