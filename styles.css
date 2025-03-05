@@ -11,6 +11,10 @@ section{
     border: 1px solid black;
     margin-top: 10px;
 }
+div{
+    border: 1px solid black;
+    margin-top: 10px;
+}
 input{
     display: block;
 }

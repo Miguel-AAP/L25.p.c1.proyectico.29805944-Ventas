@@ -7,8 +7,8 @@ export default class Cl_controlador{
         this.modelo.porcIncremento = +this.vista.valorInicial("porciento de incremento")
     }
 
-    procesarArticulo(){
-        this.modelo.procesarVenta(this.vista.procesarArticulo())
+    procesarVenta(){
+        this.modelo.procesarVenta(this.vista.procesarVenta())
         this.vista.mostrar()
         this.vista.reporteTienda(this.modelo.cajaMonto,this.modelo.clienteMayorPago,this.modelo.contVentaUnica)
     }

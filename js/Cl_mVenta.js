@@ -1,4 +1,4 @@
-export default class Cl_mArticulo{
+export default class Cl_mVenta{
     constructor({cliente,factura,costo,cantidad}){
         this.cliente = cliente,
         this.factura = factura

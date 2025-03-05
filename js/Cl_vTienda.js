@@ -1,15 +1,15 @@
-import Cl_mArticulo from "./Cl_mArticulo.js";
-import Cl_vArticulo from "./Cl_vArticulo.js";
+import Cl_mVenta from "./Cl_mVenta.js";
+import Cl_vVenta from "./Cl_vVenta.js";
 
 export default class Cl_vTienda{
     constructor(){
         this.salida = document.getElementById("salida")
         this.controlador = null
-        this.vArticulo = new Cl_vArticulo()
+        this.vVenta = new Cl_vVenta()
         this.vista = document.getElementById("mainForm")
         this.tabla = document.getElementById("mainForm_tabla")
         this.btAgregar = document.getElementById("mainForm_btAgregar")
-        this.vArticulo.btProcesar.onclick = ()=> this.controlador.procesarArticulo()
+        this.vVenta.btProcesar.onclick = ()=> this.controlador.procesarVenta()
         this.btAgregar.onclick =()=> this.mostrar()
     }
 
@@ -17,27 +17,27 @@ export default class Cl_vTienda{
         return prompt("Introducir "+ entrada)
     }
 
-    procesarArticulo(){
-        this.mArticulo = new Cl_mArticulo({
-            cliente: this.vArticulo.cliente,
-            factura: this.vArticulo.factura,
-            costo: this.vArticulo.costo,
-            cantidad: this.vArticulo.cantidad
+    procesarVenta(){
+        this.mVenta = new Cl_mVenta({
+            cliente: this.vVenta.cliente,
+            factura: this.vVenta.factura,
+            costo: this.vVenta.costo,
+            cantidad: this.vVenta.cantidad
         })
-        return this.mArticulo
+        return this.mVenta
     }
 
     mostrar(){
         this.vista.hidden = !this.vista.hidden
-        this.vArticulo.mostrar()
+        this.vVenta.mostrar()
     }
 
     reporteTienda(montoCaja,clienteMayorPago,contVentaUnica){
         this.tabla.innerHTML += `<tr>
-                        <td>${this.mArticulo.cliente}</td>
-                        <td>${this.mArticulo.factura}</td>
-                        <td>${this.mArticulo.costo}</td>
-                        <td>${this.mArticulo.cantidad}</td>
+                        <td>${this.mVenta.cliente}</td>
+                        <td>${this.mVenta.factura}</td>
+                        <td>${this.mVenta.costo}</td>
+                        <td>${this.mVenta.cantidad}</td>
                         <tr> `
         this.salida.innerHTML = `Monto en caja: ${montoCaja}<br>
                                 Cliente que pagó más: ${clienteMayorPago}<br>

@@ -11,7 +11,7 @@ método procesar venta
     comparar venta cantidad
         acumular cantidadVentaUnica 
 clase venta
-atributo nombre cliente
-atributo numero factura
+atributo cliente
+atributo factura
 atributo costo
 atributo cantidad

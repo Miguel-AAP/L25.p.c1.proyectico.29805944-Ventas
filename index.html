@@ -10,24 +10,24 @@
     <section id="mainForm">
         <table id="mainForm_tabla">
             <tr>
-                <th>cliente</th>
-                <th>código</th>
-                <th>costo</th>
-                <th>cantidad</th>
+                <th>Cliente</th>
+                <th>Factura</th>
+                <th>Costo</th>
+                <th>Cantidad</th>
             </tr>
         </table>
         <button id="mainForm_btAgregar"> Añadir nueva venta</button>
     </section>
-    <section id="articuloForm">
+    <section id="ventaForm">
         <h3> Datos de venta</h3>
-        <input type="text" id="articuloForm_inCliente" placeholder="Cliente"></input>
-        <input type="text" id="articuloForm_inFactura" placeholder="Factura"></input>
-        <input type="text" id="articuloForm_inCosto" placeholder="Costo"></input>
-        <input type="text" id="articuloForm_inCantidad" placeholder="Cantidad"></input>
-        <button id="articuloForm_btProcesar"> Procesar venta</button>
+        <input type="text" id="ventaForm_inCliente" placeholder="Cliente"></input>
+        <input type="text" id="ventaForm_inFactura" placeholder="Factura"></input>
+        <input type="text" id="ventaForm_inCosto" placeholder="Costo"></input>
+        <input type="text" id="ventaForm_inCantidad" placeholder="Cantidad"></input>
+        <button id="ventaForm_btProcesar"> Procesar venta</button>
     </section>
-    <section id="salida">
-    </section>
+    <div id="salida">
+    </div>
     <script type="module">
         import Cl_principal from "./js/Cl_principal.js"
         new Cl_principal() 
